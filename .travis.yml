@@ -4,6 +4,8 @@ node_js:
   - stable
   - lts/*
 
+services: mongodb
+
 dist: trusty
 sudo: false
 cache: yarn
