@@ -8,7 +8,4 @@ dist: trusty
 
 script:
   - npm run lint
-  - npm test --coverage
-
-after_success:
-  - travis_retry cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
+  - npm test
