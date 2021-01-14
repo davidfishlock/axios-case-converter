@@ -7,7 +7,7 @@ node_js:
 dist: trusty
 
 script:
-  - npm lint
+  - npm run lint
   - npm test --coverage
 
 after_success:
