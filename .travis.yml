@@ -5,12 +5,7 @@ node_js:
   - lts/*
 
 dist: trusty
-sudo: false
-cache: yarn
 
 script:
-  - yarn lint
-  - yarn test --coverage
-
-after_success:
-  - travis_retry cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
+  - npm run lint
+  - npm test
