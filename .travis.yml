@@ -4,15 +4,11 @@ node_js:
   - stable
   - lts/*
 
-services: mongodb
-
 dist: trusty
-sudo: false
-cache: yarn
 
 script:
-  - yarn lint
-  - yarn test --coverage
+  - npm lint
+  - npm test --coverage
 
 after_success:
   - travis_retry cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
