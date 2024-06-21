@@ -5,7 +5,7 @@ import {
   isURLSearchParams,
 } from "../../src/util";
 
-beforeEach(async () => {
+beforeEach(() => {
   // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
   // @ts-ignore
   global.Blob = require("blob-polyfill").Blob;
